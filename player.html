@@ -5,13 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 12 - The Music Player Application</title>
-    <script src="js/player.js"></script>
+    <script src="js/player.js" defer></script>
 </head>
 <body>
     <h1>The Music Player</h1>
-    <!-- ADD DROP DOWN MENU -->
+    <form id="form"></form>
+        <!-- ADD DROP DOWN MENU -->
+        <select id="dropdown">
+            <option value="">Select an album to play</option>
+        </select>
     <!-- ADD PLAY BUTTON -->
+        <input type="submit" name="submit" id="submit" value="Play">
+    </form> 
     <!-- ADD SHOW FAVORITE ALBUM BUTTON -->
-    <p id="favoriteAlbum"></p>
+    <div class="showFav">
+        <br>
+        <button id="showFavAlbum">Show my fovorite album</button>
+        <p id="favoriteAlbum"></p>
+    </div>
+    
 </body>
 </html>
